@@ -19,16 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sources\core\graphics\animation\animation.cpp" />
+    <ClCompile Include="sources\game\gui\key\key.cpp" />
     <ClCompile Include="sources\core\input\manager\manager.cpp" />
     <ClCompile Include="sources\core\input\mouse\mouse.cpp" />
-    <ClCompile Include="sources\core\resources\fonts.cpp" />
+    <ClCompile Include="sources\core\resources\fonts\fonts.cpp" />
     <ClCompile Include="sources\core\resources\manager\manager.cpp" />
     <ClCompile Include="sources\core\gui\button\button.cpp" />
-    <ClCompile Include="sources\core\resources\textures.cpp" />
+    <ClCompile Include="sources\core\resources\textures\textures.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sources\core\graphics\animation\animation.hpp" />
+    <ClInclude Include="sources\core\graphics\graphics.hpp" />
+    <ClInclude Include="sources\game\gui\key\key.hpp" />
     <ClInclude Include="sources\core\input\manager\manager.hpp" />
     <ClInclude Include="sources\core\input\input.hpp" />
     <ClInclude Include="sources\core\resources\manager\manager.hpp" />
