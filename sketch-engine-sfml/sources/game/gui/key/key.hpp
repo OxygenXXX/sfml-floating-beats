@@ -13,7 +13,7 @@ namespace beats::gui
 
 		private:
 
-		sf::Sprite key_sprite;
+		sf::RectangleShape key_rectangle;
 	};
 }
 
