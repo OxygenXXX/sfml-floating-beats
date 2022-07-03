@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sources\game\gui\note\note.cpp" />
     <ClCompile Include="sources\game\song\song.cpp" />
     <ClCompile Include="sources\core\graphics\animation\animation.cpp" />
     <ClCompile Include="sources\game\gui\key\key.cpp" />
@@ -32,6 +33,7 @@
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sources\game\gui\note\note.hpp" />
     <ClInclude Include="sources\game\gui\elements.hpp" />
     <ClInclude Include="sources\game\song\song.hpp" />
     <ClInclude Include="sources\core\graphics\animation\animation.hpp" />

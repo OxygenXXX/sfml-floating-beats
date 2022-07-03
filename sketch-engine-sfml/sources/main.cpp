@@ -10,7 +10,9 @@
 #include "game/gui/elements.hpp"
 
 using sketch::graphics::Animation;
+
 using beats::gui::Key;
+using beats::gui::Note;
 
 signed int main(void)
 {
@@ -23,9 +25,13 @@ signed int main(void)
 		std::cout << "Unable to load player texture!";
 	}
 
-	Key mania_key1(200, 200, &mania_key_texture);
+	Note mania_note1({ 100.0f, 100.0f }, .0f, &mania_key_texture);
 
-	mania_key1.key_rectangle.setPosition(500, 500);
+	mania_note1.note_rectangle.setPosition({ 200.0f, 150.0f });
+
+	//Key mania_key1(200, 200, &mania_key_texture);
+
+	//mania_key1.key_rectangle.setPosition(500, 500);
 
 	/*
 
@@ -70,9 +76,13 @@ signed int main(void)
 
 		*/
 
+		mania_note1.updateNote(delta_time);
+
 		window_controller.clear();
 
-		window_controller.draw(mania_key1.key_rectangle);
+		//window_controller.draw(mania_key1.key_rectangle);
+
+		window_controller.draw(mania_note1.note_rectangle);
 
 		/*
 

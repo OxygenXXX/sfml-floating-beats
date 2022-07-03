@@ -2,8 +2,6 @@
 
 #include <SFML/Graphics.hpp>
 
-
-
 namespace beats::gui
 {
 	class Key
@@ -11,6 +9,8 @@ namespace beats::gui
 		public:
 
 		Key(uint16_t k_width, uint16_t k_height, sf::Texture* k_texture);
+
+		//void displayKey(sf::RenderWindow& render_window);
 
 		public:
 
