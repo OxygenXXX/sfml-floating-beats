@@ -18,6 +18,8 @@ signed int main(void)
 {
 	sf::RenderWindow window_controller(sf::VideoMode(1366, 768), "Hello");
 
+	/*
+
 	sf::Texture mania_key_texture;
 
 	if (!mania_key_texture.loadFromFile("mania_btn.png"))
@@ -25,9 +27,11 @@ signed int main(void)
 		std::cout << "Unable to load player texture!";
 	}
 
-	Note mania_note1({ 100.0f, 100.0f }, .0f, &mania_key_texture);
+	Note mania_note1({ 70.0f, 70.0f }, 10.0f, &mania_key_texture);
 
 	mania_note1.note_rectangle.setPosition({ 200.0f, 150.0f });
+
+	*/
 
 	//Key mania_key1(200, 200, &mania_key_texture);
 
@@ -76,13 +80,13 @@ signed int main(void)
 
 		*/
 
-		mania_note1.updateNote(delta_time);
+		//mania_note1.updateNote(delta_time);
 
 		window_controller.clear();
 
 		//window_controller.draw(mania_key1.key_rectangle);
 
-		window_controller.draw(mania_note1.note_rectangle);
+		//window_controller.draw(mania_note1.note_rectangle);
 
 		/*
 

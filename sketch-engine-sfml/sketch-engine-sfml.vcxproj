@@ -33,6 +33,7 @@
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sources\game\constants.hpp" />
     <ClInclude Include="sources\game\gui\note\note.hpp" />
     <ClInclude Include="sources\game\gui\elements.hpp" />
     <ClInclude Include="sources\game\song\song.hpp" />
