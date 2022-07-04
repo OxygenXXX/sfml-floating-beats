@@ -7,16 +7,28 @@
 #include "core/input/input.hpp"
 #include "core/graphics/graphics.hpp"
 
+#include "core/application/application.hpp"
+
 #include "game/gui/elements.hpp"
 
+#include "game/constants.hpp"
+
 using sketch::graphics::Animation;
+
+using sketch::Application;
 
 using beats::gui::Key;
 using beats::gui::Note;
 
+
 signed int main(void)
 {
+	/*
 	sf::RenderWindow window_controller(sf::VideoMode(1366, 768), "Hello");
+
+	*/
+
+	Application game_controller(window_width, window_height, window_caption);
 
 	/*
 
@@ -54,6 +66,8 @@ signed int main(void)
 
 	*/
 
+	/*
+
 	float delta_time = 0.0f;
 
 	sf::Clock game_timer;
@@ -72,6 +86,8 @@ signed int main(void)
 			}
 		}
 
+	*/
+
 		/*
 
 		animator.updateAnimation(2, delta_time);
@@ -82,7 +98,7 @@ signed int main(void)
 
 		//mania_note1.updateNote(delta_time);
 
-		window_controller.clear();
+		//window_controller.clear();
 
 		//window_controller.draw(mania_key1.key_rectangle);
 
@@ -94,8 +110,8 @@ signed int main(void)
 
 		*/
 
-		window_controller.display();
-	}
-
+		//window_controller.display();
+	//}
+	
 	return EXIT_SUCCESS;
 }
