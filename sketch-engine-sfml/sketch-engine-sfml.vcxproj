@@ -31,6 +31,7 @@
     <ClCompile Include="sources\core\resources\manager\manager.cpp" />
     <ClCompile Include="sources\core\gui\button\button.cpp" />
     <ClCompile Include="sources\core\resources\textures\textures.cpp" />
+    <ClCompile Include="sources\game\utils\window\random_title.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>

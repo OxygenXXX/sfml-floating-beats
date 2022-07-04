@@ -28,7 +28,7 @@ signed int main(void)
 
 	*/
 
-	Application game_controller(beats::window_width, beats::window_height, beats::window_caption);
+	Application game_controller(beats::window_width, beats::window_height, beats::default_window_title);
 
 	/*
 

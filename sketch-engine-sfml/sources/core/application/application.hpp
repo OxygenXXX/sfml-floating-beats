@@ -19,6 +19,7 @@ namespace sketch
 		Application(uint16_t wnd_width, uint16_t wnd_height, string wnd_title);
 
 		void setApplicationSize(const sf::Vector2u& wnd_size);
+
 		void setApplicationPosition(const sf::Vector2u& wnd_pos);
 
 		void setApplicationTitle(const std::string wnd_title);
