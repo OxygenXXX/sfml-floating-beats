@@ -4,6 +4,8 @@
 
 #include <iostream>
 
+#include <random>
+
 #include "core/input/input.hpp"
 #include "core/graphics/graphics.hpp"
 
@@ -13,6 +15,8 @@
 
 #include "game/constants.hpp"
 
+#include "game/utils/utils.hpp"
+
 using sketch::graphics::Animation;
 
 using sketch::Application;
@@ -20,15 +24,18 @@ using sketch::Application;
 using beats::gui::Key;
 using beats::gui::Note;
 
-
 signed int main(void)
 {
+	srand(time(0));
+
 	/*
 	sf::RenderWindow window_controller(sf::VideoMode(1366, 768), "Hello");
 
 	*/
 
 	Application game_controller(beats::window_width, beats::window_height, beats::default_window_title);
+
+	game_controller.window_controller->setTitle(beats::utils::generateRandomTitle());
 
 	/*
 
@@ -66,27 +73,25 @@ signed int main(void)
 
 	*/
 
-	/*
-
 	float delta_time = 0.0f;
 
 	sf::Clock game_timer;
 
-	while (window_controller.isOpen())
+	while (game_controller.window_controller->isOpen())
 	{
 		delta_time = game_timer.restart().asSeconds();
 
 		sf::Event window_event;
 
-		while (window_controller.pollEvent(window_event))
+		while (game_controller.window_controller->pollEvent(window_event))
 		{
 			if (window_event.type == sf::Event::Closed)
 			{
-				window_controller.close();
+				game_controller.window_controller->close();
 			}
 		}
 
-	*/
+	}
 
 		/*
 

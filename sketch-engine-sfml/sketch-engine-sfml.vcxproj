@@ -32,6 +32,7 @@
     <ClCompile Include="sources\core\gui\button\button.cpp" />
     <ClCompile Include="sources\core\resources\textures\textures.cpp" />
     <ClCompile Include="sources\game\utils\window\random_title.cpp" />
+    <ClCompile Include="sources\game\utils\window\random_title.hpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\core\gui\textbox\textbox.cpp" />
   </ItemGroup>
@@ -52,6 +53,7 @@
     <ClInclude Include="sources\core\gui\elements.hpp" />
     <ClInclude Include="sources\core\resources\resources.hpp" />
     <ClInclude Include="sources\core\gui\textbox\textbox.hpp" />
+    <ClInclude Include="sources\game\utils\utils.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

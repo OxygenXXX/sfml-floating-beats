@@ -13,6 +13,8 @@ namespace sketch
 
 		this->window_controller = new sf::RenderWindow(window_videomode, wnd_title);
 
+		/*
+
 		while (this->window_controller->isOpen())
 		{
 			sf::Event window_event;
@@ -30,5 +32,7 @@ namespace sketch
 			this->window_controller->display();
 
 		}
+
+		*/
 	}
 }
