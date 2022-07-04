@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sources\core\application\application.cpp" />
+    <ClCompile Include="sources\core\application\utils\utils.cpp" />
     <ClCompile Include="sources\game\gui\note\note.cpp" />
     <ClCompile Include="sources\game\song\song.cpp" />
     <ClCompile Include="sources\core\graphics\animation\animation.cpp" />
@@ -35,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sources\core\application\application.hpp" />
+    <ClInclude Include="sources\core\constants.hpp" />
     <ClInclude Include="sources\game\constants.hpp" />
     <ClInclude Include="sources\game\gui\note\note.hpp" />
     <ClInclude Include="sources\game\gui\elements.hpp" />
