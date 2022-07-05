@@ -14,6 +14,7 @@
 using std::string;
 
 using sketch::resources::ResourcesManager;
+
 using sketch::input::InputManager;
 
 namespace sketch
@@ -37,8 +38,6 @@ namespace sketch
 		sf::RenderWindow* window_controller;
 
 		ResourcesManager resources_manager;
-
-		InputManager input_manager;
 
 		private:
 

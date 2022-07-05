@@ -5,6 +5,9 @@
 #include <string>
 #include <vector>
 
+#include <SFML/Window.hpp>
+#include <SFML/OpenGL.hpp>
+
 namespace beats
 {
 	const uint16_t window_width = 1366;

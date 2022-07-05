@@ -29,8 +29,6 @@ signed int main(void)
 
 	game_controller.setApplicationMaxFPS(beats::beats_max_fps);
 
-	//game_controller.setApplicationPosition();
-
 	float delta_time = 0.0f;
 
 	sf::Clock game_timer;
