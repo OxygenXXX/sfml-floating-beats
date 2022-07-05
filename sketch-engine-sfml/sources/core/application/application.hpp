@@ -6,9 +6,15 @@
 #include <cstdint>
 #include <string>
 
+#include "../resources/resources.hpp"
+#include "../input/input.hpp"
+
 #include "../constants.hpp"
 
 using std::string;
+
+using sketch::resources::ResourcesManager;
+using sketch::input::InputManager;
 
 namespace sketch
 {
@@ -29,6 +35,10 @@ namespace sketch
 		public:
 
 		sf::RenderWindow* window_controller;
+
+		ResourcesManager resources_manager;
+
+		InputManager input_manager;
 
 		private:
 
