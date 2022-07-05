@@ -24,20 +24,11 @@ using sketch::Application;
 using beats::gui::Key;
 using beats::gui::Note;
 
-using beats::utils::window::generateRandomTitle;
-
 signed int main(void)
 {
-	srand(time(0));
+	Application game_controller(beats::window_width, beats::window_height, beats::default_title);
 
-	/*
-	sf::RenderWindow window_controller(sf::VideoMode(1366, 768), "Hello");
-
-	*/
-
-	Application game_controller(beats::window_width, beats::window_height, beats::default_window_title);
-
-	game_controller.window_controller->setTitle(generateRandomTitle(time(0)));
+	game_controller.setApplicationTitle(beats::utils::window::generateRandomTitle(time(0)));
 
 	/*
 

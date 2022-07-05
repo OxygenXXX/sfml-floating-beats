@@ -11,7 +11,6 @@ namespace sketch
 
 		sf::VideoMode window_videomode(this->window_width, this->window_height);
 
-		this->window_controller = new sf::RenderWindow(window_videomode, wnd_title);
-
+		this->window_controller = new sf::RenderWindow(window_videomode, this->window_title);
 	}
 }

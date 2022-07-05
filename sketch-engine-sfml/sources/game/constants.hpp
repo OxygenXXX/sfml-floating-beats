@@ -14,15 +14,15 @@ namespace beats
 
 	const std::string game_version = "v1.0.0";
 
-	const std::string default_window_title = "Floating Beats " + game_version;
+	const std::string default_title = "Floating Beats " + game_version;
 
 	const std::vector<std::string> window_titles =
 	{
-		default_window_title + " - made by OxygenXXX",
-		default_window_title + " - have a nice day",
-		default_window_title + " - this wonderful world",
-		default_window_title + " - better luck next time",
-		default_window_title + " - do you like candies?",
+		default_title + " - made by OxygenXXX",
+		default_title + " - have a nice day",
+		default_title + " - this wonderful world",
+		default_title + " - better luck next time",
+		default_title + " - do you like candies?",
 	};
 }
 
