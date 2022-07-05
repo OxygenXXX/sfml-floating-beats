@@ -24,6 +24,8 @@ using sketch::Application;
 using beats::gui::Key;
 using beats::gui::Note;
 
+using beats::utils::window::generateRandomTitle;
+
 signed int main(void)
 {
 	srand(time(0));
@@ -35,7 +37,7 @@ signed int main(void)
 
 	Application game_controller(beats::window_width, beats::window_height, beats::default_window_title);
 
-	game_controller.window_controller->setTitle(beats::utils::generateRandomTitle());
+	game_controller.window_controller->setTitle(generateRandomTitle(time(0)));
 
 	/*
 

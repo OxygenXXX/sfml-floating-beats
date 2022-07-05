@@ -32,6 +32,8 @@ namespace sketch
 
 		private:
 
+		sf::Clock application_clocks;
+
 		uint16_t window_width = window_width;
 		uint16_t window_height = window_height;
 
