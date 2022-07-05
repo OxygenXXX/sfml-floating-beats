@@ -1,15 +1,17 @@
-#include "random_title.hpp"
+#include "../../constants.hpp"
 
-namespace beats::utils
+#include "../utils.hpp"
+
+#include <random>
+
+namespace beats::utils::window
 {
-	std::string generateRandomTitle()
+	std::string generateRandomTitle(uint32_t title_seed)
 	{
-		uint8_t window_titles_count = window_titles.size();
+		srand(title_seed);
 
-		uint8_t window_title_pointer = rand() % window_titles_count;
-
-		std::string window_selected_title = window_titles[window_title_pointer];
-
-		return window_selected_title;
+		uint16_t title_pointer = rand() % window_titles.size();
+		
+		return window_titles[title_pointer];
 	}
 }
